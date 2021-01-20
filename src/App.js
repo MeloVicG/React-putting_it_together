@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import PersonCard from "./components/PersonCards";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <PersonCard lastName="The" firstName="UnderTaker" age={1} hairColor="turqoise"/>
+      <PersonCard lastName="Mad" firstName="Max" age={22} hairColor="black"/>
+      <PersonCard lastName="John" firstName="Snow" age={55} hairColor="black"/>
+      <PersonCard lastName="Optimus " firstName="Prime" age={1000} hairColor="blue"/>
+      
     </div>
   );
 }
